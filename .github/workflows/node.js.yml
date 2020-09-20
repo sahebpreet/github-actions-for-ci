@@ -31,7 +31,7 @@ jobs:
     - name: npm install and build webpack
       - uses: actions/upload-artifact@master
         with:
-          name: webpack artifacts
+    needs: build
           path: public/
         npm install
         npm run build
